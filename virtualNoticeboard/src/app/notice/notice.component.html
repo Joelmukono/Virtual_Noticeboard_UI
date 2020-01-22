@@ -1,4 +1,4 @@
-<h1>VIRTUAL NOTICEBOARD</h1>
+<h1><span id="bluish">VIRTUAL<br></span><span id="orangish">NOTICE</span><span id="greenish">BOARD</span></h1>
 <br><hr><br>
 
 <div>
@@ -7,8 +7,8 @@
     <li *ngFor='let notice of notices;  let i = index'>
         <a href="#">
           <h2>{{notice.title}}</h2>
-          <h6>{{notice.type}}</h6>
-          <!-- <p>{{notice.content}}</p> -->
+          <h6><em>{{notice.type}}</em></h6><hr>
+          <h6><small>{{notice.dateOfCreation}}</small></h6>
         </a>
     </li>
 </ul>
