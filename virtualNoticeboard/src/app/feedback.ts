@@ -1,3 +1,3 @@
 export class Feedback {
-    constructor(public comment: string){}
+    constructor(public feedbackId: number, public comment: string){}
 }
