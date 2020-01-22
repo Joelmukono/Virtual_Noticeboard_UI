@@ -16,7 +16,7 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #C9FF96;
   margin-bottom: 25px;
 }
 
@@ -66,3 +66,4 @@ button:hover {
     width: 100%;
   }
 }
+

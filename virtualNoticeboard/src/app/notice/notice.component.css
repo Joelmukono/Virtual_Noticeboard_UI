@@ -115,4 +115,5 @@ ul li:nth-child(3n) a:hover, ul li:nth-child(3n) a:focus {
 }
 .styled-hr {
     border: 1px solid #C9FF96;
+    margin-bottom: 25px;
 }
