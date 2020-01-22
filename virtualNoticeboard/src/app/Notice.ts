@@ -1,3 +1,3 @@
 export class Notice {
-    constructor(public id: number, public type: string, public title: string, public timeOfCreation: Date, public content: string){}
+    constructor(public id: number, public type: string, public title: string, public dateOfCreation: Date, public content: string){}
 }
