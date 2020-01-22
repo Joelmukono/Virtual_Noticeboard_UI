@@ -16,7 +16,7 @@ ul{
 ul li a{
     text-decoration:none;
     color:#000;
-    background:rgb(218, 249, 255);
+    background:rgb(163, 240, 255);
     display:block;
     height:10em;
     width:10em;
@@ -63,13 +63,37 @@ ul li:nth-child(even) a{
     -moz-transform:rotate(4deg);
     position:relative;
     top:5px;
-    background:rgb(255, 245, 159);
+    background:rgb(252, 242, 154);
 }
+
+ul li:nth-child(even) a:hover, ul li:nth-child(even) a:focus {
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    position:relative;
+    z-index:5;
+}
+
+
 ul li:nth-child(3n) a{
     -o-transform:rotate(-3deg);
     -webkit-transform:rotate(-3deg);
     -moz-transform:rotate(-3deg);
     position:relative;
     top:-5px;
-    background:rgb(229, 255, 204);
+    background:rgb(201, 255, 150);
+}
+
+ul li:nth-child(3n) a:hover, ul li:nth-child(3n) a:focus {
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    position:relative;
+    z-index:5;
 }
