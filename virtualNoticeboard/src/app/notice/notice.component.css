@@ -175,7 +175,9 @@ h2,p{
 .btn-sml {
     border-radius: 8px;
 }
-
+#userName {
+    margin-right: 5px;
+}
 @media screen and (max-width: 500px) {
     .navbar a {
       float: none;
