@@ -1,47 +1,58 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="navbar">
-  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#"><i class="fa fa-fw fa-plus-circle"></i> New Notice</a>
-  <a href="#"><i class="fa fa-fw fa-cog"></i> Options</a>
-  <a href="#"><i class="fa fa-fw fa-user-plus"></i> Sign Up</a>
+  <a class="active navP" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a class="navP" href="#"><i class="fa fa-fw fa-plus-circle"></i> New Notice</a>
+  <a class="navP" href="#"><i class="fa fa-fw fa-user-plus"></i> Sign Up</a>
 </div>
 
 <!-- <h1><span id="bluish">VIRTUAL<br></span><span id="orangish">NOTICE</span><span id="greenish">BOARD</span></h1>
 <br><hr class="styled-hr"><br> -->
 
+<h1 id="heroP">Click on a notice to view content</h1>
+
 
 <div class="ul">
-  <!-- <a class="notice-modal" data-toggle="modal" data-target="#contentModal" href="#"><i class="fa fa-fw fa-chevron-circle-down"></i></a> -->
     <div class="li" *ngFor='let notice of notices;  let i = index'>
-        <a data-toggle="modal" data-target="#myModal">
-          <h2>{{notice.title}}</h2>
+        <a type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">
+          <h2><small>{{notice.id}}.</small>{{notice.title}}</h2>
           <h6><em>{{notice.type}}</em></h6><hr>
           <h6><small>{{notice.dateOfCreation}}</small></h6>
         </a>
-    </div>
 </div>
 
 
-
-
-<div class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" tabindex="-1" aria-hidden="true" id="myModal" *ngFor='let notice of notices;  let i = index'>
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
+
+
       <div class="modal-header">
-        <h5 class="modal-title">notice.title</h5>
-        <h6 class="modal-type">notice.type</h6>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h4 class="modal-title">{{notice.title}}</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
+
+     
       <div class="modal-body">
-        <p>notice.content</p>
+        {{notice.content}}
       </div>
+
+     
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Comment</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-sml">Comment</button>
       </div>
+
     </div>
   </div>
 </div>
+
+
+
+
+<!-- <script>
+  $(document).ready(function(){
+    $("a").click(function(){
+      $(".alert").show();
+    });
+});
+</script> -->

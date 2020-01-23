@@ -2,12 +2,25 @@
     margin:0;
     padding:0;
 }
-h1 {
+#heroP {
     margin-top: 40px;
     padding: 10px;
     text-align: center;
     font-size: 30px;
-    color: green;
+    color: #C9FF96;
+    font-family: 'Offside', cursive;
+}
+h2 {
+    font-family: 'Offside', cursive;
+}
+h4 {
+    font-family: 'Offside', cursive;
+}
+.navP {
+    font-family: 'Offside', cursive;
+}
+h6 {
+    font-family: 'Arapey', serif;
 }
 h2,p{
     font-size:100%;
@@ -139,8 +152,30 @@ h2,p{
   }
 .active {
     background-color: #4CAF50;
-  }
-  
+}
+.modal {
+    position: fixed;
+    top: 10%;
+    left: 18.5%;
+    z-index: 1050;
+    width: 80%;
+    height: 80%;
+    margin-left: -10%;
+}
+.modal-header {
+    background-color: #A3F0FF;
+}
+.modal-footer {
+    background-color: #FCF29A;
+}
+.close {
+    margin-right: 0.1px;
+}
+
+.btn-sml {
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 500px) {
     .navbar a {
       float: none;
