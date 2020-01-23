@@ -7,13 +7,15 @@ import { NoticeComponent } from './notice/notice.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from './login/login.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { NoticeFormComponent } from './notice-form/notice-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NoticeComponent,
     LoginComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    NoticeFormComponent
   ],
   imports: [
     BrowserModule,
