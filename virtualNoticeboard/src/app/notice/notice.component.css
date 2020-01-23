@@ -13,10 +13,10 @@ h2,p{
     font-size:100%;
     font-weight:normal;
 }
-ul,li{
+.ul,.li{
     list-style:none;
 }
-ul{
+.ul{
     overflow:hidden;
     padding:3em;
 }
@@ -29,7 +29,7 @@ ul{
 #greenish {
     color: #C9FF96;
 } */
-ul li a{
+.ul .li a{
     text-decoration:none;
     color:#000;
     background:rgb(163, 240, 255);
@@ -44,25 +44,25 @@ ul li a{
     -o-transition:-o-transform .15s linear;
     -webkit-transition:-webkit-transform .15s linear;
 }
-ul li{
+.ul .li{
     margin:1em;
     float:left;
 }
-ul li h2{
+.ul .li h2{
     font-size:140%;
     font-weight:bold;
     padding-bottom:10px;
 }
-  ul li p{
+.ul .li p{
     font-family: Arial, Helvetica, sans-serif;
     font-size:180%;
 }
-ul li a{
+.ul .li a{
     -webkit-transform: rotate(-6deg);
     -o-transform: rotate(-6deg);
     -moz-transform:rotate(-6deg);
 }
-ul li a:hover,ul li a:focus{
+.ul .li a:hover,ul .li a:focus{
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
     -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
     -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
@@ -73,7 +73,7 @@ ul li a:hover,ul li a:focus{
     z-index:5;
 }
 
-ul li:nth-child(even) a{
+.ul .li:nth-child(even) a{
     -o-transform:rotate(4deg);
     -webkit-transform:rotate(4deg);
     -moz-transform:rotate(4deg);
@@ -82,7 +82,7 @@ ul li:nth-child(even) a{
     background:rgb(252, 242, 154);
 }
 
-ul li:nth-child(even) a:hover, ul li:nth-child(even) a:focus {
+.ul .li:nth-child(even) a:hover, .ul li:nth-child(even) a:focus {
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
     -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
     -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
@@ -94,7 +94,7 @@ ul li:nth-child(even) a:hover, ul li:nth-child(even) a:focus {
 }
 
 
-ul li:nth-child(3n) a{
+.ul .li:nth-child(3n) a{
     -o-transform:rotate(-3deg);
     -webkit-transform:rotate(-3deg);
     -moz-transform:rotate(-3deg);
@@ -103,7 +103,7 @@ ul li:nth-child(3n) a{
     background:rgb(201, 255, 150);
 }
 
-ul li:nth-child(3n) a:hover, ul li:nth-child(3n) a:focus {
+.ul .li:nth-child(3n) a:hover, ul li:nth-child(3n) a:focus {
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
     -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
     -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);

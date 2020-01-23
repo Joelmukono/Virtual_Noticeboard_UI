@@ -10,16 +10,20 @@ export class NoticeComponent implements OnInit {
 
   notices: Notice[] = [
     new Notice(1, "Announcement", "Closing dates", new Date(2020,1,27), "We would be closing school on february the 5th"),
-    new Notice(1, "Notification", "Android content", new Date(2020,1,28), "Every progressing student has been added to the android content, check your LMS to confirm. If any issues, report to your TM"),
-    new Notice(1, " Internal Memo", "New employee", new Date(2020,1,29), "New TMs for Java have been employed to ease off the burden on the current ones as there has been an increase in the amount of students admitted to the school"),
-    new Notice(1, "Announcement", "Closing dates", new Date(2020,1,27), "We would be closing school on february the 5th"),
-    new Notice(1, "Notification", "Android content", new Date(2020,1,28), "Every progressing student has been added to the android content, check your LMS to confirm. If any issues, report to your TM"),
-    new Notice(1, " Internal Memo", "New employee", new Date(2020,1,29), "New TMs for Java have been employed to ease off the burden on the current ones as there has been an increase in the amount of students admitted to the school"),
-    new Notice(1, " Internal Memo", "New employee", new Date(2020,1,29), "New TMs for Java have been employed to ease off the burden on the current ones as there has been an increase in the amount of students admitted to the school"),
-    new Notice(1, "Announcement", "Closing dates", new Date(2020,1,27), "We would be closing school on february the 5th"),
-    new Notice(1, "Notification", "Android content", new Date(2020,1,28), "Every progressing student has been added to the android content, check your LMS to confirm. If any issues, report to your TM"),
-    new Notice(1, " Internal Memo", "New employee", new Date(2020,1,29), "New TMs for Java have been employed to ease off the burden on the current ones as there has been an increase in the amount of students admitted to the school")
+    new Notice(2, "Notification", "Android content", new Date(2020,1,28), "Every progressing student has been added to the android content, check your LMS to confirm. If any issues, report to your TM"),
+    new Notice(3, " Internal Memo", "New employee", new Date(2020,1,29), "New TMs for Java have been employed to ease off the burden on the current ones as there has been an increase in the amount of students admitted to the school"),
+    new Notice(4, "Announcement", "Closing dates", new Date(2020,1,27), "We would be closing school on february the 5th"),
+    new Notice(5, "Notification", "Android content", new Date(2020,1,28), "Every progressing student has been added to the android content, check your LMS to confirm. If any issues, report to your TM"),
+    new Notice(6, " Internal Memo", "New employee", new Date(2020,1,29), "New TMs for Java have been employed to ease off the burden on the current ones as there has been an increase in the amount of students admitted to the school"),
+    new Notice(7, " Internal Memo", "New employee", new Date(2020,1,29), "New TMs for Java have been employed to ease off the burden on the current ones as there has been an increase in the amount of students admitted to the school"),
+    new Notice(8, "Announcement", "Opening dates", new Date(2020,1,27), "We would be closing school on march the 14th"),
+    new Notice(9, "Notification", "Python content", new Date(2020,1,28), "Every progressing full stack student has been added to the Django content, check your LMS to confirm. If any issues, report to your TM"),
+    new Notice(10, " Internal Memo", "Employee resigned", new Date(2020,1,29), "Mrs Atieno from the admissions team has resigned from Moringa to join another company")
   ];
+
+  // $('#myModal').on('shown.bs.modal', function () {
+  //   $('#myInput').trigger('focus')
+  // })
 
   constructor() { }
 
