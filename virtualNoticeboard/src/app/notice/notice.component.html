@@ -1,19 +1,46 @@
-<h1><span id="bluish">VIRTUAL<br></span><span id="orangish">NOTICE</span><span id="greenish">BOARD</span></h1>
-<br><hr class="styled-hr"><br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div>
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-fw fa-plus-circle"></i> New Notice</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="#"><i class="fa fa-fw fa-user-plus"></i> Sign Up</a>
+</div>
 
-<ul>
+<!-- <h1><span id="bluish">VIRTUAL<br></span><span id="orangish">NOTICE</span><span id="greenish">BOARD</span></h1>
+<br><hr class="styled-hr"><br> -->
+
+
+<ul class="notice-modal" data-toggle="modal" data-target="#contentModal">
     <li *ngFor='let notice of notices;  let i = index'>
-        <a href="#">
+        <a href="#contentModal">
           <h2>{{notice.title}}</h2>
           <h6><em>{{notice.type}}</em></h6><hr>
           <h6><small>{{notice.dateOfCreation}}</small></h6>
         </a>
     </li>
 </ul>
-</div>
 
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button> -->
+
+
+
+     
+<!-- <div class="modal fade" id="contentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>  -->
