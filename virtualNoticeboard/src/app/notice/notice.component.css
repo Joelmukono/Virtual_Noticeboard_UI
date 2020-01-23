@@ -178,6 +178,10 @@ h2,p{
 #userName {
     margin-right: 5px;
 }
+.delete {
+    float: left;
+    margin: 10px;;
+}
 @media screen and (max-width: 500px) {
     .navbar a {
       float: none;

@@ -20,7 +20,10 @@
           <h6><small>{{notice.dateOfCreation | date | uppercase}}</small></h6>
         </a>
 </div>
+<div>
 
+  
+</div>
 
 <div class="modal fade" tabindex="-1" aria-hidden="true" id="myModal" *ngFor='let notice of notices;  let i = index'>
   <div class="modal-dialog modal-lg">
@@ -40,6 +43,8 @@
      
       <div class="modal-footer">
         <h6 id="userName">Posted by : {{notice.user}}</h6>
+        <button type="button" class="btn btn-danger delete">Delete</button>
+        
       </div>
 
     </div>
