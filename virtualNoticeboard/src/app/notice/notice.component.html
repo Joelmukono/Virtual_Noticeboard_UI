@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+  <a class="active navP" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a class="navP" href="#"><i class="fa fa-fw fa-plus-circle"></i> New Notice</a>
+  <a class="navP" href="#"><i class="fa fa-fw fa-user-plus"></i> Sign Up</a>
+</div>
+
+<!-- <h1><span id="bluish">VIRTUAL<br></span><span id="orangish">NOTICE</span><span id="greenish">BOARD</span></h1>
+<br><hr class="styled-hr"><br> -->
+
+<h1 id="heroP">Click on a notice to view content</h1>
+
+
+<div class="ul">
+    <div class="li" *ngFor='let notice of notices; let i = index'>
+        <a type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">
+          <h2><small>{{notice.id}}. </small>{{notice.title}}</h2>
+          <h6><em>{{notice.type}}</em></h6><hr>
+          <h6><small>{{notice.dateOfCreation | date | uppercase}}</small></h6>
+        </a>
+</div>
+
+
+<!-- <div *ngIf='{{notice.id}}'> -->
+<div class="modal fade" tabindex="-1" aria-hidden="true" id="myModal" *ngFor='let notice of notices;  let i = index'>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+        <h4 class="modal-title">{{notice.title}}</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+     
+      <div class="modal-body">
+        {{notice.content}}
+      </div>
+
+     
+      <div class="modal-footer">
+        <h6 id="userName">Posted by : {{notice.user}}</h6>
+        <button type="button" class="btn btn-danger delete">Delete</button>
+        
+      </div>
+
+    </div>
+  </div>
+<!-- </div> -->
+
+
+<!-- <br><br><hr><br><br>
+
+<app-notice-form></app-notice-form> -->
+
+
+
+
+<!-- <script>
+  $(document).ready(function(){
+    $("a").click(function(){
+      $(".alert").show();
+    });
+});
+</script> -->
