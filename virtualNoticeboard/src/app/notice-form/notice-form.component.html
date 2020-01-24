@@ -7,33 +7,33 @@
         <div class="form-group">
             <label for="type">Type of notice</label>
             <input type="text" class="form-control" id="type" [(ngModel)]="newNotice.type" name="type" #type='ngModel' required>
-            <div [hidden]="type.valid || type.pristine" class="alert alert-danger">
+            <!-- <div [hidden]="type.valid || type.pristine" class="alert alert-danger">
               <p>Type is required</p>
-            </div>
+            </div> -->
         </div>
 
         <div class="form-group">
             <label for="title">Title of notice</label>
             <input type="text" class="form-control" id="title" [(ngModel)]="newNotice.title" name="title" #title='ngModel' required>
-            <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
+            <!-- <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
               <p>Title is required</p>
-            </div>
+            </div> -->
         </div>
 
         <div class="form-group">
             <label for="content">Notice content</label>
             <textarea class="form-control" id="content" rows="4" [(ngModel)]="newNotice.content" name="content" #content="ngModel" required></textarea>
-            <div [hidden]="content.valid || content.pristine" class="alert alert-danger">
+            <!-- <div [hidden]="content.valid || content.pristine" class="alert alert-danger">
               <p>Content is required</p>
-            </div>
+            </div> -->
         </div>
 
         <div class="form-group">
             <label for="user">User</label>
             <input type="text" class="form-control" id="user" [(ngModel)]="newNotice.user" name="user" #user='ngModel' required>
-            <div [hidden]="user.valid || user.pristine" class="alert alert-danger">
+            <!-- <div [hidden]="user.valid || user.pristine" class="alert alert-danger">
               <p>User required</p>
-            </div>
+            </div> -->
         </div>
 
         <button type="submit" class="btn btn-success">Post notice</button>

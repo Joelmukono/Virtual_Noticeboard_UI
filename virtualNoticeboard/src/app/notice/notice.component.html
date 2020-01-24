@@ -13,18 +13,16 @@
 
 
 <div class="ul">
-    <div class="li" *ngFor='let notice of notices;  let i = index'>
+    <div class="li" *ngFor='let notice of notices; let i = index'>
         <a type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">
           <h2><small>{{notice.id}}. </small>{{notice.title}}</h2>
           <h6><em>{{notice.type}}</em></h6><hr>
           <h6><small>{{notice.dateOfCreation | date | uppercase}}</small></h6>
         </a>
 </div>
-<div>
 
-  
-</div>
 
+<!-- <div *ngIf='{{notice.id}}'> -->
 <div class="modal fade" tabindex="-1" aria-hidden="true" id="myModal" *ngFor='let notice of notices;  let i = index'>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -49,7 +47,12 @@
 
     </div>
   </div>
-</div>
+<!-- </div> -->
+
+
+<!-- <br><br><hr><br><br>
+
+<app-notice-form></app-notice-form> -->
 
 
 
